@@ -1,0 +1,25 @@
+Dedekind cuts -method of construction of real numbers from the rational numbers
+Cut the rationals into two sets A and B where every element of A is less than every element of B. A has no maximal element. B either does or doesn’t have a minimal element. If B has a minmal element, then the cut is rational. If B does not contain the minimal element, then the cut is irrational and this irrational number fills the gap between two rational numbers. 
+ from wiki 
+Appendix A.5 in textbook:
+
+“Just like with all our previous constructions, each real number is going to be a set; at this point we have the rationals constructed, so each real number is going to be represented by a set of rationals. The way you want to think about it is this: the real number x is going to be represented by the set of all rational numbers strictly less than x. These sets are going to be called cuts, and while we discuss them you can start convincing yourself that each real number will indeed correspond to a unique cut, and each cut corresponds to a unique real number. But first, let's formally discuss cuts.
+A cut should be thought of as the set (-∞, b) intersect Q. That is, all rational numbers up to a certain point. Formally, it is defined as any set Cb satisfying the following three conditions.
+1. Cb ≤ Q, but Cb != {} and Cb != Q; Not empty and is bounded
+2. If p E Cb and q !E Cb, then p < g; 
+3. If p E Cb, then there exists some q E Cb where p < g. Has no maximal element”
+“Addition and order for these cuts:
+-	Ca + Cb := {p+q : p E Ca, q E Cb}
+-	Ca < Cb if and only if Ca c Cb
+One can verify that the addition of two cuts is still a cut, and that addition is commutative and associative, that the 0 cut behaves as it should (in turn giving positive and negative cuts) and that additive inverses exist. The inequality has the property that, given any two cuts Ca and Cb, exactly one of the following holds:
+Ca < Cb, Ca = Cb or Cb < Ca.
+Defining multiplication is trickier, because if you simply multiply the two sets together you'll have massive negative numbers multiplying against each other, creating massive positive numbers. Intuitively, you want Ca • Cb = Cab. That is, the cut (-∞, a) intersect Q times the cut (-∞, b) intersect Q should equal the cut (-∞, a •b) intersect Q; but cuts aren't defined with such a and b - they produce a and b. One way around this is to first define multiplication for positive cuts. That is, if Ca and Co are both positive (larger than the cut {g € Q: q < 03), then define
+Ca * Cb:= {p• q: p E Ca, q E Cb with p,q ≥ 0}U {q E Q: q < 0}.
+With this you can then define a product of two negative cuts by setting the product equal to the product of the two corresponding positive cuts. To define multiplication between a positive cut and a negative cut, you know the product should be negative so one approach is to consider the multiplication when both are positive, and then translate the result to the corresponding negative cut. It's a hassle to write out, but that's the idea.
+One can then check that the product of two cuts is still a cut, that multiplicative inverses exist, and that multiplication is commutative and associative, as well as the remaining multiplicative/additive distributive and order properties. These would be quite annoying to work out in detail, but you can smile knowing someone carefully checked them.
+With our set built, and with the algebraic properties defined and their properties verified, we now know that R is an ordered field. All that is left is to show that it is complete. This is done by showing that cuts satisfy the least upper bound property.
+That is, if C is a collection of cuts which is bounded above (meaning there exists some cut D such that C ≤ D for all C E C; i.e., C c D for all C E C), then there exists a least upper bound meaning there is a cut M such that M ≤ D for all upper
+bounds D). The proof is this: Let M = Ucec C, and show that
+M is a cut and therefore M E R;
+M is an upper bound of C, but is smaller than all other upper bounds.
+With those, R is a complete ordered field, and hence the real numbers are constructed.”
