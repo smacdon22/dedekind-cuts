@@ -8,6 +8,12 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 theme: jekyll-theme-minimal
 title: Dedekind's homepage
 description: My project on dedekind cuts and other cool real numbers!
