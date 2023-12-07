@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: /dedekindcuts.github.io
+source: main
 incremental: false
 highlighter: rouge
 gist:
